@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clothing - Trixtoparadise | Online Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+       <div class="navbar">
+        <div class="logo">
+            <a href="index.html"><img src="images/logo.png" alt="125px"></a>
+            
+        </div>
+        
+        <nav>
+            <ul id="MenuItems">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="clothing.html">Clothing</a></li>
+                <li><a href="account.html">Account</a></li>
+            </ul>
+        </nav>
+           <a href="cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
+        <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+    </div>
+   </div>
+</div>
+ 
+ <div class="small-container">
+        <div class="row row-2">
+            <h2>All Items</h2>
+            <select>
+                <option>Default sort</option>
+                <option>Sort by price</option>
+                <option>Sort by popularity</option>
+                <option>Sort by sale</option>
+            </select>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <img src="images/product-1.jpg">
+                <h4><a href="item-info1.html">Graphic Utility Tee shirt #1</a></h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>            
+                </div>
+                <p>R149.99</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-2.jpg">
+                <h4><a href="item-info2.html">Graphic Utility Tee shirt #2 (Black)</a></h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>            
+                </div>
+                <p>R249.99</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-3.jpg">
+                <h4><a href="item-info3.html">Graphic Utility Tee shirt #2 (White)</a></h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>            
+                </div>
+                <p>R249.99</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-4.jpg">
+                <h4><a href="item-info4.html">Graphic Utility Sweater (Black)</a></h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>            
+                </div>
+                <p>R399.99</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-5.jpg">
+                <h4><a href="item-info5.html">Graphic Utility Sweater (White)</a></h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>            
+                </div>
+                <p>R399.99</p>
+            </div>
+        </div>
+        <div class="page-btn">
+            <span>1</span>
+            <span>2</span>
+            <span>3</span>
+            <span>&#8594;</span>
+        </div>
+    </div>
+ 
+  <!------- footer ------->
+  <div class="footer">
+      <div class="container">
+          <div class="row">
+              <div class="footer-col-1">
+                  <img src="images/footer.jpg">
+              </div>
+              <div class="footer-col-2">
+                  <h3>Visit/Contact us</h3>
+                  <ul>
+                      <li><a href="https://m.facebook.com/trixtoparadise">Facebook</a></li>
+                      <li><a href="https://www.instagram.com/trixtoparadise">Instagram</a></li>
+                      <li><a href="mailto:trixtoparadise.creatives@gmail.com">Gmail</a></li>
+                  </ul>
+              </div>
+          </div>
+          <hr>
+          <p class="copyright">Copyright 2021 - Trixtoparadise ecommerce website prototype</p>
+      </div>
+  </div>
+
+<!------- js for togglemenu ------->
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+        MenuItems.style.maxHeight = "0px";
+        function menutoggle(){
+            if(MenuItems.style.maxHeight == "0px"){
+                MenuItems.style.maxHeight = "200px";
+            }
+            else{
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+    </script>
+
+</body>
+</html>

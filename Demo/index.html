@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trixtoparadise | Online Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+  <div class="header">
+   <div class="container">
+       <div class="navbar">
+        <div class="logo">
+            <a href="index.html"><img src="images/logo.png" alt="125px"></a>
+        </div>
+        <nav>
+            <ul id="MenuItems">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="clothing.html">Clothing</a></li>
+                <li><a href="account.html">Account</a></li>
+            </ul>
+        </nav>
+        <a href="cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
+        <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+    </div>
+    <div class="row">
+        <div class="col-2">
+            <h1>ISSUE 001: FALL/WINTER COLLECTION '21</h1>
+            <p>Trixtoparadise, founded in 2020. It's hard to pinpoint the aim of the creative agency since we look at art as life and life itself as art. We are firm believers of the philosophy that describes the existence of art in every matter throughout the universe.Our agency is for both sides: consumers and creatives. We have created an apparel line for everyone who loves what we do. This is the first issue of our creative medium. Enjoy!!</p>
+            <a href="resources/Lookbook.PDF" class="btn">View PDF</a>
+        </div>
+        
+    </div>
+   </div>
+  </div>
+  
+  <!------- featured categories ------->
+  <div class="categories">
+     <div class="small-container">
+         <div class="row">
+          <div class="col-3">
+              <img src="images/IMG_1.jpg">
+          </div>
+          <div class="col-3">
+              <img src="images/IMG_2.jpg">
+          </div>
+          <div class="col-3">
+              <img src="images/IMG_3.jpg">
+          </div>
+          <div class="col-3">
+              <img src="images/IMG_4.jpg">
+          </div>
+          <div class="col-3">
+              <img src="images/IMG_5.jpg">
+          </div>
+          <div class="col-3">
+              <img src="images/IMG_6.jpg">
+          </div>
+      </div>
+     </div>
+  </div>
+  
+  <!------- footer ------->
+  <div class="footer">
+      <div class="container">
+          <div class="row">
+              <div class="footer-col-1">
+                  <img src="images/footer.jpg">
+              </div>
+              <div class="footer-col-2">
+                  <h3>Visit/Contact us</h3>
+                  <ul>
+                      <li><a href="https://m.facebook.com/trixtoparadise">Facebook</a></li>
+                      <li><a href="https://www.instagram.com/trixtoparadise">Instagram</a></li>
+                      <li><a href="mailto:trixtoparadise.creatives@gmail.com">Gmail</a></li>
+                  </ul>
+              </div>
+          </div>
+          <hr>
+          <p class="copyright">Copyright 2021 - Trixtoparadise ecommerce website prototype</p>
+      </div>
+  </div>
+<!------- js for togglemenu ------->
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+        MenuItems.style.maxHeight = "0px";
+        function menutoggle(){
+            if(MenuItems.style.maxHeight == "0px"){
+                MenuItems.style.maxHeight = "200px";
+            }
+            else{
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+    </script>
+
+</body>
+</html>
